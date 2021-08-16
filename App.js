@@ -7,11 +7,16 @@ const estilos=StyleSheet.create({
   grandeAzul:{
     color:'blue',
     fontWeight:'bold',
-    fontSize:'60',
+    fontSize:'60'
   },
   rojo:{
-    color:'red',
+    color:'red'
   },
+  titulo:{
+    color:'black',
+    fontWeight:'bold',
+    fontSize:'100'
+  }
 });
 
 export default function App() {
@@ -23,10 +28,10 @@ export default function App() {
         }
         style={{width:400,height:400}}
       />
-      <Text style={estilos.rojo}>Solo rojo</Text>
-      <Text style={estilos.grandeAzul}>Solo Azul grande</Text>
-      <Text style={[estilos.grandeAzul,estilos.rojo]}>Azul grande, entonces rojo</Text>
-      <Text style={[estilos.rojo,estilos.grandeAzul]}>rojo, entoces Azul grande</Text>
+      <Text style={estilos.titulo}>Mi nombre es Francisco José Valle Cornejo</Text>
+      <Text style={estilos.grandeAzul}>Mi carrera es Ingenieria en Ciencias de la Computación</Text>
+      <Text style={[estilos.grandeAzul,estilos.rojo]}>Pasatiempos son Jugar Videojuegos, desarrollar paginas web estaticas</Text>
+      <Text style={[estilos.rojo,estilos.grandeAzul]}>Lenguaje Favorito es JavaScript</Text>
     </View>
   );
 }
